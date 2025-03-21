@@ -1,0 +1,25 @@
+# 03 - Kør Python i en Docker-container
+
+# Byg image fra Dockerfile i nuværende mappe
+docker build -t python-app .
+
+# Kør container baseret på image
+docker run python-app
+
+# Se output i terminal
+# Hej fra Python i Docker!
+
+# Tilføj bibliotek (fx requests)
+# Opdater requirements.txt og main.py
+
+# Byg igen med nyt navn
+docker build -t python-requests .
+
+# Kør den opdaterede version
+docker run python-requests
+
+# Se alle images
+docker images
+
+# Se alle containere (inkl. afsluttede)
+docker ps -a

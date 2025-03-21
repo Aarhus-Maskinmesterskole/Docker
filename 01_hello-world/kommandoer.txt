@@ -1,0 +1,19 @@
+# 01 - Hello World med Docker
+
+# Kør første container
+docker run hello-world
+
+# Vis aktive containere
+docker ps
+
+# Vis ALLE containere (inkl. afsluttede)
+docker ps -a
+
+# Slet afsluttet container
+docker rm <CONTAINER_ID>
+
+# Slet image
+docker rmi hello-world
+
+# Vis alle images
+docker images

@@ -1,0 +1,4 @@
+# requirements.txt
+# Du kan tilføje Python-pakker her
+# Eksempel:
+# requests

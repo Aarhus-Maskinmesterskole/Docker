@@ -1,0 +1,15 @@
+# 04 - Volume mounts
+
+# Kør Python-script fra delt mappe (Linux/macOS)
+docker run -v $(pwd)/host_app:/app -w /app python:3.12-slim python app.py
+
+# Kør Python-script fra delt mappe (Windows PowerShell)
+docker run -v ${PWD}\host_app:/app -w /app python:3.12-slim python app.py
+
+# Gør run_docker.sh eksekverbart og kør det (Linux/macOS)
+chmod +x run_docker.sh
+./run_docker.sh
+
+# Tjek at din mappe er korrekt mountet
+docker ps -a
+docker inspect <CONTAINER_ID>

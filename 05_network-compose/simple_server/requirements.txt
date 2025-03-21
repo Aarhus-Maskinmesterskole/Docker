@@ -1,0 +1,5 @@
+# simple_server/requirements.txt
+# Dette er en del af Docker-workshoppen.
+# Her definerer vi hvilke Python-pakker der skal installeres i containeren.
+
+flask

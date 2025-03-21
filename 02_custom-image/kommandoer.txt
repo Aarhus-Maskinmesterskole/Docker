@@ -1,0 +1,24 @@
+# 02 - Byg dit eget Docker-image
+
+# Byg image fra Dockerfile i nuværende mappe
+docker build -t mit-image .
+
+# Kør container baseret på image
+docker run mit-image
+
+# Se alle images
+docker images
+
+# Se alle containere (inkl. afsluttede)
+docker ps -a
+
+# Slet container
+docker rm <CONTAINER_ID>
+
+# Slet image
+docker rmi mit-image
+
+# (Ekstra) Byg og kør med shell-script
+chmod +x run.sh
+docker build -t mit-script .
+docker run mit-script

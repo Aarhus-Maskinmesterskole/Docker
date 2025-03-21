@@ -1,0 +1,25 @@
+# 06 - Opdatering og versionering af containere
+
+# Byg version 1 af container
+docker build -t min-app:v1 .
+
+# Kør version 1
+docker run min-app:v1
+
+# (Redigér ny_version.py)
+# Opdater til version 2
+
+# Byg version 2
+docker build -t min-app:v2 .
+
+# Kør version 2
+docker run min-app:v2
+
+# Se alle images
+docker images
+
+# Slet et image (valgfrit)
+docker rmi min-app:v1
+
+# Tag et image manuelt (valgfrit)
+docker tag min-app:v2 min-app:seneste

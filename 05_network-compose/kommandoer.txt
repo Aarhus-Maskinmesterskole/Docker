@@ -1,0 +1,19 @@
+# 05 - Netværk og Docker Compose
+
+# Byg og kør container med docker-compose
+docker compose up --build
+
+# (eller uden build hvis allerede bygget)
+docker compose up
+
+# Åbn i browser:
+# http://localhost:5000
+
+# Stop og ryd op
+docker compose down
+
+# Se alle kørende containere
+docker ps
+
+# Se netværk
+docker network ls
